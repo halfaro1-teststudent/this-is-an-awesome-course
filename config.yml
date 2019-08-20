@@ -1,5 +1,5 @@
 title: This is an awesome course
-tagline: A brand new course on Learning Lab
+tagline: ''
 description: A course that teaches you how to be awesome.
 template:
   repo: this-is-an-awesome-course-template
@@ -11,7 +11,7 @@ before:
 steps:
   - title: First step
     description: The first step in your course
-    event: issues.assigned
+    event: issues.closed
     link: '{{ repoUrl }}'
     actions:
       - type: closeIssue
