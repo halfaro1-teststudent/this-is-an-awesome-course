@@ -1,0 +1,17 @@
+title: This is an awesome course
+tagline: A brand new course on Learning Lab
+description: A course that teaches you how to be awesome.
+template:
+  repo: this-is-an-awesome-course-template
+  name: this-is-an-awesome-course
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
